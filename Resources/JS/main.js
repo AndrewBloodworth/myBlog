@@ -1,8 +1,4 @@
 
-const callback = (event) => {
-    
-}
-
 
 let button = document.getElementById("button");
 

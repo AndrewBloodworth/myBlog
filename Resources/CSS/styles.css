@@ -1,5 +1,10 @@
 
-
+body {
+    text-align: center;
+}
+a {
+    color: black;
+}
 .main-nav {
     display: flex;
     justify-content: flex-start;
@@ -16,18 +21,13 @@
 }
 
 
-
-.main-link {
-    color:white;
-}
-
 .banner {
     background-image: url(/Users/andrewbloodworth/projects/myBlog/Resources/Images/Diamond.jpeg);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 43.5rem;
+    height: 23.5rem;
 
 }
 
@@ -44,12 +44,7 @@
     border-radius: 4px;
 }
 
-
-#main {
-
-}
 .post {
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -57,23 +52,43 @@
     height: 43.5rem;
 }
 
+.container-block {
+    background-color: whitesmoke;
 
-/* unvisited link */
-a:link {
-    color: black;
+  }
+.flex-container {
+    background-color: whitesmoke;
+    display: flex;
   }
   
-  /* visited link */
-  a:visited {
-    color: black;
+  .box {
+    background-color: Dodgerblue;
+    height: 100px;
+    width: 100px;
+    border: 1px solid lightgrey;
+  }
+  #flex {
+   display: flex;
+  }
+  #inline-flex {
+    display: inline-flex;
+   }
+   #flexstart {
+    justify-content: flex-start;
   }
   
-  /* mouse over link */
-  a:hover {
-    color: black;
+  #flexend {
+    justify-content: flex-end;
   }
   
-  /* selected link */
-  a:active {
-    color: black;
+  #center {
+    justify-content: center;
+  }
+  
+  #spacearound {
+    justify-content: space-around;
+  }
+  
+  #spacebetween {
+    justify-content: space-between;
   }

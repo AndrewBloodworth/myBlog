@@ -1,6 +1,68 @@
+html {
+
+}
+
 .main-nav {
     display: flex;
+    justify-content: flex-start;
 }
 .main-nav li {
-    display: inline;
+    border: 2px solid black;
+    padding: 1rem 1rem;
+    display: inline-flex;
 }
+.main-nav h1 {
+    border: 2px solid black;
+    padding: 1rem 1rem;
+    display: inline-flex;
+}
+
+
+
+.main-link {
+    color:white;
+}
+
+.banner {
+    background-image: url(/Users/andrewbloodworth/projects/myBlog/Resources/Images/Diamond.jpeg);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 43.5rem;
+}
+.main-text {
+    color: black;
+    background-color: white;
+    padding: 20px 40px;
+    margin: auto auto;
+    border: 1px solid white;
+    text-align: center;
+}
+#main-text {
+   
+    justify-content: center;
+    border-radius: 4px;
+}
+
+
+
+
+/* unvisited link */
+a:link {
+    color: black;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: black;
+  }
+  
+  /* selected link */
+  a:active {
+    color: black;
+  }

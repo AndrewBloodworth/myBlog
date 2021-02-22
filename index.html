@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
     <link rel="stylesheet" href="Resources/CSS/styles.css" type="text/css"> 
+    <!--JS-->
+    <script src="Resources/JS/main.js" defer></script>
     <title>myBlog</title>
 </head>
 <body>
@@ -16,11 +18,23 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="mind.html">Mind</a></li>
             </ul>
+            <div>
+
+            </div>
         </nav>
-        <div class="banner">
+        <div class="banner" id="main">
             <div class="main-text">
                 <h2 id="main-text">Blog</h2>
+                <form action="index.html" method="get">
+                    <label for="search">Search</label>
+                    <input type="text" name="search" id="search">
+                    <input type="submit" value="submit" id="main-search">
+                </form>
             </div>
+            <button id="button">Hello</button>
+        </div>
+        <div class="post" id="post">
+
         </div>
     </header>
     

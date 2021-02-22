@@ -1,0 +1,6 @@
+.main-nav {
+    display: flex;
+}
+.main-nav li {
+    display: inline;
+}

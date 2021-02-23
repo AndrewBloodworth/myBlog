@@ -10,10 +10,16 @@ if (document.getElementById("button")) {
 let boxes = document.getElementsByClassName("dombox");
 
 const boxMouseOver = event => {
-    event.currentTarget.style.backgroundColor = "turquoise";
+    let targetStyle = event.currentTarget.style;
+    targetStyle.backgroundColor = "turquoise";
+    targetStyle.width = "200px";
+    targetStyle.height = "200px";
 }
 const boxMouseOut = event => {
-    event.currentTarget.style.backgroundColor = "Dodgerblue";
+    let targetStyle = event.currentTarget.style;
+    targetStyle.backgroundColor = "Dodgerblue";
+    targetStyle.width = "100px";
+    targetStyle.height = "100px";
 }
 for (let i=0; i<boxes.length;i++) {
     let box = boxes.item(i);

@@ -5,22 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
     <link rel="stylesheet" href="Resources/CSS/styles.css" type="text/css"> 
+    <!--JS-->
+    <script src="Resources/JS/main.js" defer></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
     <title>myBlog</title>
 </head>
 <body>
     <header>
-        <nav class="main-nav">
-            <a href="index.html"><h1>myBlog</h1></a>
-            <ul>
+        <nav class="flex-container main-nav">
+            <a href="index.html" id="inline-flex"><h1>myBlog</h1></a>
+            <ul id="inline-flex">
                 <li><a href="index.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="mind.html">Mind</a></li>
             </ul>
+            <div class="hamburger" id="inline-flex">
+                <h1>-</h1>
+            </div>
         </nav>
+    </header>
         <div class="banner">
             <div class="main-text">Mind</div>
         </div>
         <div>
+            <h1>DOM Events with JS</h1>
+            <p>This box has a mouseOver and mouseOut dom event.</p>
+            <div class="flex-container" id="center">
+                <div class="dombox"></div>
+            </div>
+        </div>
+        <div>
+            <p>Flex vs. Block</p>
             <h1>Display: Flex</h1>
             <div class="flex-container" id="flex">
                 <div class="box">
@@ -45,63 +62,95 @@
                 <h2>3</h2>
                 </div>
             </div>
-                <h1>Inline-flex</h1>
-                <div class="flex-container" id="inline-flex">
-                    <div class="flex-container" id="inline-flex">
-                        <div class="box">
-                        <h3>1</h3>
-                        </div>
-                        <div class="box">
-                        <h3>2</h3>
-                        </div>
-                        <div class="box">
-                        <h3>3</h3>
-                        </div>
+            <p>Using display: Inline Flex to show flex containers side by side.</p>
+            <h1>Inline-flex</h1>
+            <div class="flex-container" id="inline-flex">
+                <div id="inline-flex">
+                    <div class="box">
+                    <h3>1</h3>
                     </div>
-                    <div class="flex-container" id="inline-flex">
-                        <div class="box">
-                        <h3>1</h3>
-                        </div>
-                        <div class="box">
-                        <h3>2</h3>
-                        </div>
-                        <div class="box">
-                        <h3>3</h3>
-                        </div>
+                    <div class="box">
+                    <h3>2</h3>
+                    </div>
+                    <div class="box">
+                    <h3>3</h3>
                     </div>
                 </div>
-                <h1>Flex Start</h1>
-                <div class="flex-container" id="flexstart">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
+                <div id="inline-flex">
+                    <div class="box">
+                    <h3>1</h3>
+                    </div>
+                    <div class="box">
+                    <h3>2</h3>
+                    </div>
+                    <div class="box">
+                    <h3>3</h3>
+                    </div>
                 </div>
-                <h1>Flex End</h1>
-                <div class="flex-container" id="flexend">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                </div>
-                <h1>Center</h1>
-                <div class="flex-container" id="center">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                </div>
-                <h1>Space Around</h1>
-                <div class="flex-container" id="spacearound">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                </div>
-                <h1>Space Between</h1>
-                <div class="flex-container" id="spacebetween">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                </div>
+            </div>
+            <p>Using Justify Content on Flex items</p>
+            <h1>Flex Start</h1>
+            <div class="flex-container" id="flexstart">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <h1>Flex End</h1>
+            <div class="flex-container" id="flexend">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <h1>Center</h1>
+            <div class="flex-container" id="center">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <h1>Space Around</h1>
+            <div class="flex-container" id="spacearound">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <h1>Space Between</h1>
+            <div class="flex-container" id="spacebetween">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <p>Flex and Aligning Items</p>
+            <h1>Flex Start</h1>
+            <div class="flex-container container-align-items" id="align-flexstart">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+            <h1>Flex End</h1>
+            <div class="flex-container container-align-items" id="align-flexend">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+            <h1>Center</h1>
+            <div class="flex-container container-align-items" id="align-center">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+            <h1>Baseline</h1>
+            <div class="flex-container container-align-items" id="align-baseline">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+            <h1>Stretch</h1>
+            <div class="flex-container container-align-items" id="align-stretch">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
         </div>
-    </header>
     
     
 </body>

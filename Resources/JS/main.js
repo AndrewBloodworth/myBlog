@@ -7,6 +7,7 @@ if (document.getElementById("button")) {
     };
 }
 
+//Adding Mouse Over and Mouse Out DOM events to the dombox of the Mind page.
 let boxes = document.getElementsByClassName("dombox");
 
 const boxMouseOver = event => {
@@ -21,8 +22,28 @@ const boxMouseOut = event => {
     targetStyle.width = "100px";
     targetStyle.height = "100px";
 }
-for (let i=0; i<boxes.length;i++) {
-    let box = boxes.item(i);
+for (let b in boxes) {
+    let box = boxes.item(b);
     box.onmouseover = boxMouseOver;
     box.onmouseout = boxMouseOut;
 }
+
+//Adding Mouse Over and Mouse Out DOM events to the Main-Text of the Banner
+let mainText = document.getElementsByClassName("main-text")[0];
+
+const mainMouseOver = event => {
+    let targetStyle = event.currentTarget.style;
+    targetStyle.backgroundColor = "black";
+    targetStyle.color = "white";
+    console.log("Hello");
+};
+const mainMouseOut = event => {
+    let targetStyle = event.currentTarget.style;
+    targetStyle.backgroundColor = "white";
+    targetStyle.color = "black";
+};
+mainText.onmouseout = mainMouseOut;
+mainText.onmouseover = mainMouseOver;
+
+
+

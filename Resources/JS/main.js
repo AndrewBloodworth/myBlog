@@ -7,20 +7,20 @@ if (document.getElementById("button")) {
     };
 }
 
-//Adding Mouse Over and Mouse Out DOM events to the dombox of the Mind page.
+//Adding Mouse Over and Mouse Out DOM events to the dombox of Mind.html.
 if (document.getElementsByClassName("dombox")[0]) {
     let boxes = document.getElementsByClassName("dombox");
     const boxMouseOver = event => {
-        let targetStyle = event.currentTarget.style;
-        targetStyle.backgroundColor = "turquoise";
-        targetStyle.width = "200px";
-        targetStyle.height = "200px";
+        let tS = event.currentTarget.style;
+        tS.backgroundColor = "turquoise";
+        tS.width = "200px";
+        tS.height = "200px";
     };
     const boxMouseOut = event => {
-        let targetStyle = event.currentTarget.style;
-        targetStyle.backgroundColor = "Dodgerblue";
-        targetStyle.width = "100px";
-        targetStyle.height = "100px";
+        let tS = event.currentTarget.style;
+        tS.backgroundColor = "Dodgerblue";
+        tS.width = "100px";
+        tS.height = "100px";
     };
     for (let b in boxes) {
         let box = boxes.item(b);
@@ -35,19 +35,18 @@ if (document.getElementsByClassName("dombox")[0]) {
 if (document.getElementsByClassName("main-text")[0]) {
     let mainText = document.getElementsByClassName("main-text")[0];
     const mainMouseOver = event => {
-        let targetStyle = event.currentTarget.style;
-        targetStyle.backgroundColor = "black";
-        targetStyle.color = "white";
-        console.log("Hello");
+        let tS = event.currentTarget.style;
+        tS.backgroundColor = "Dodgerblue";
+        tS.color = "white";
+        tS.padding = "80px";
+
     };
     const mainMouseOut = event => {
-        let targetStyle = event.currentTarget.style;
-        targetStyle.backgroundColor = "white";
-        targetStyle.color = "black";
+        let tS = event.currentTarget.style;
+        tS.backgroundColor = "white";
+        tS.color = "black";
+        tS.padding = "20px 40px";
     };
     mainText.onmouseout = mainMouseOut;
     mainText.onmouseover = mainMouseOver;
 };
-
-
-

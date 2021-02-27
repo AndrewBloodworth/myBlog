@@ -598,6 +598,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid turquoise;
 }
 
 #grid-justify-start {
@@ -611,4 +612,75 @@ header {
 }
 #grid-justify-stretch {
   justify-items: stretch;
+}
+
+
+.justify-content-grid-container {
+  display: grid;
+  width: 100%;
+  background-color: whitesmoke;
+  grid-gap: 10px;
+  grid-template: repeat(2, 250px) / repeat(2, 250px);
+}
+
+.jbox2 {
+  background-color: dodgerblue;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid turquoise;
+}
+#justify-content-start {
+  justify-content: start;
+}
+#justify-content-end {
+  justify-content: end;
+}
+#justify-content-center {
+  justify-content: center;
+}
+#justify-content-stretch {
+  justify-content: stretch;
+}
+#justify-content-space-around {
+  justify-content: space-around;
+}
+#justify-content-space-between {
+  justify-content: space-between;
+}
+#justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+
+.align-items-grid-container {
+  display: grid;
+  width: 100%;
+  background-color: whitesmoke;
+  grid-gap: 10px;
+  grid-template: 250px / repeat(2, 250px);
+  justify-items: center;
+  justify-content: center;
+}
+.jbox3 {
+  background-color: dodgerblue;
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid turquoise;
+}
+#align-items-start {
+  align-items: start;
+}
+#align-items-end {
+  align-items: end;
+}
+#align-items-center {
+  align-items: center;
+}
+#align-items-stretch {
+  align-items: stretch;
 }

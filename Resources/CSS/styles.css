@@ -684,3 +684,53 @@ header {
 #align-items-stretch {
   align-items: stretch;
 }
+
+.align-content-grid-container {
+  display: grid;
+  width: 100%;
+  height: 600px;
+  grid-template: repeat(2, 200px) / repeat(2, 200px);
+  background-color: whitesmoke;
+  grid-gap: 10px;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.jbox-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.jbox4 {
+  background-color: dodgerblue;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid turquoise;
+}
+
+#align-content-start {
+  align-content: start;
+}
+#align-content-end {
+  align-content: end;
+}
+#align-content-center {
+  align-content: center;
+}
+#align-content-stretch {
+  align-content: stretch;
+}
+#align-content-space-around {
+  align-content: space-around;
+}
+#align-content-space-between {
+  align-content: space-between;
+}
+#align-content-space-evenly {
+  align-content: space-evenly;
+}
